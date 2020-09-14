@@ -1,0 +1,49 @@
+<!-- 
+<input placeholder="email"[(ngModel)]='login.email'>
+<br>
+<input placeholder="password"[(ngModel)]='login.password'>
+<br>
+<input placeholder="phoneNumber"[(ngModel)]='login.phoneNumber'>
+<br> 
+<input placeholder="google"[(ngModel)]='login.google'>
+<br>
+<input placeholder="facebook"[(ngModel)]='login.facebook'>
+<br>
+
+
+<button type="submit">Login</button> -->
+<html>
+<body>
+    <form action="/login_component.html">
+<div *ngIf="login">
+
+        <div>
+            <label>email:
+            <input [(ngModel)]="login.email" placeholder="email"/>
+            </label>
+    <br>
+            <label >Password:</label>
+            <input [(ngModel)]="login.password" type="password" id="pwd" name="pwd" minlength="8">
+            <br>
+
+            <label>phoneNumber:
+                <input [(ngModel)]="login.phoneNumber" placeholder="phoneNumber"/>
+            </label>
+            <br>
+            <label>google:
+                <input [(ngModel)]="login.google" placeholder="google"/>
+            </label>
+            <br>
+            <label>facebook:
+                <input [(ngModel)]="login.facebook" placeholder="facebook"/>
+            </label>
+    <br>
+
+            
+        </div>
+       
+        <button type="submit">Login</button>
+</div>
+
+</body>
+</html>
